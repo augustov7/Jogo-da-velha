@@ -1,0 +1,26 @@
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 200px;
+	height: 200px;
+	border-style: solid;
+	border-width: 1px;
+	margin: auto;
+	margin-top: 250px;
+	padding: 5px;
+	/*background-color: gray;*/
+}
+
+.main button{
+	width: 33%;
+	height: 33%;
+	display: inline;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	color: black;
+	font-weight: bold;
+
+}
