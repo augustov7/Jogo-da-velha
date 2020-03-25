@@ -1,4 +1,6 @@
 var op = 1;
+var player1 = player1;
+var player2 = player2;
 
 function clique_aqui(e, id){
 	
@@ -61,7 +63,7 @@ function clique_aqui(e, id){
 		}		
 	}
 
-
+	end_game();
 }
 
 
@@ -71,7 +73,7 @@ function checa_superior(){
 	var elemento03 = document.getElementById("3");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
 }
 
@@ -81,7 +83,7 @@ function checa_inferior(){
 	var elemento03 = document.getElementById("9");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
 }
 
@@ -91,7 +93,7 @@ function checa_esquerdo(){
 	var elemento03 = document.getElementById("7");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
 }
 
@@ -101,7 +103,7 @@ function checa_direito(){
 	var elemento03 = document.getElementById("9");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
 }
 
@@ -111,7 +113,7 @@ function checa_meio_reto(){
 	var elemento03 = document.getElementById("8");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
 }
 
@@ -121,7 +123,7 @@ function checa_meio_lado(){
 	var elemento03 = document.getElementById("6");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
 }
 
@@ -131,7 +133,7 @@ function checa_diagonal_esquerdo(){
 	var elemento03 = document.getElementById("9");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
 }
 
@@ -141,6 +143,31 @@ function checa_diagonal_direito(){
 	var elemento03 = document.getElementById("7");
 	if (elemento01.innerHTML == elemento02.innerHTML && elemento02.innerHTML == elemento03.innerHTML) {
 		alert(`Vencedor: ${elemento03.innerHTML} `)
-		window.location.reload()
+		reset_fields();
 	}
+}
+
+function end_game(){
+
+	for(i = 1; i <= 9; i++){
+
+		var elemento = document.getElementById(`${i}`);
+
+		if (elemento.innerHTML == "") {
+			return;
+		}
+	}
+
+	reset_fields()
+
+}
+
+function reset_fields(){
+
+	for(i = 1; i <= 9; i++){
+
+		var elemento = document.getElementById(`${i}`);
+
+		elemento.innerHTML = ""
+	}	
 }

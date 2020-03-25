@@ -8,7 +8,7 @@
 	border-style: solid;
 	border-width: 1px;
 	margin: auto;
-	margin-top: 250px;
+	margin-top: 75px;
 	padding: 5px;
 	/*background-color: gray;*/
 }
@@ -23,5 +23,58 @@
 	color: black;
 	font-weight: bold;
 	font-size: 32px;
+}
+
+.menu{
+	
+	margin-left: 35%;
+	margin-top: 75px;
+}
+
+.menu button{
+	background-color: white;
+	height: 50px;
+	width: 150px;
+	border-style: solid;
+	border-radius: 10px;
+	background-color:#fdcfcf;
+	color: white;
+}
+
+.menu button:hover{
+	background-color: white;
+	height: 50px;
+	width: 150px;
+	border-style: solid;
+	border-radius: 10px;
+	background-color:#f22323d9;
+	color: white;
+}
+
+.placar{
+	height: 100px;
+	width: 175px;
+	text-align: center;
+	margin-left: 44.7%;
+	margin-top: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: gray;
+}
+
+.placar h4{
+	margin-top: 0px;
+}
+
+.players{
+	margin-left: 0px;
+	text-align: left;	
+}
+
+.player1 label{
+	display: 
+	height: 5px;
+	width: 100px;
+	border-right: 1px solid;
 
 }
