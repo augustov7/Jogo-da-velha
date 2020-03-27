@@ -12,6 +12,7 @@
 	</div>
 
 	<div class="main" id="main">
+
 		<button onclick="clique_aqui(this, id);" id="1"></button>
 		<button onclick="clique_aqui(this, id);" id="2"></button>
 		<button onclick="clique_aqui(this, id);" id="3"></button>
@@ -27,19 +28,23 @@
 	<div class="placar" >
 		<h4>Placar</h4>
 		<div class="players">
+			
 			<div id="player1" class="player1"> 
-				<label>player1</label>
-				<label name="vitorias"></label>
-			</div>		
-
+				<label id="marca1">X</label>
+				<label id="nome1">player1 </label>
+				<label id="p1_wins" class="p1_wins">0</label>
+			</div>
 
 			<div id="player2" class="player2"> 
-				<label>player2</label>
-				<label name="vitorias"></label>
+				<label id="marca2">O</label>
+				<label id="nome2">player2 </label>
+				<label id="p2_wins">0</label>
 
 			</div>
 		</div>
 	</div>
+
+	<button onclick="point_add()"> test</button>
 
 </body>
 </html>

@@ -1,3 +1,10 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
 .main{
 	display: flex;
 	align-items: center;
@@ -52,7 +59,7 @@
 }
 
 .placar{
-	height: 100px;
+	height: 80px;
 	width: 175px;
 	text-align: center;
 	margin-left: 44.7%;
@@ -67,14 +74,78 @@
 }
 
 .players{
-	margin-left: 0px;
+	margin: 4px;
 	text-align: left;	
 }
 
 .player1 label{
-	display: 
+	margin-left: 5px;
+	margin-bottom: 10px;	
+	display: flex;
+	/*border-right: 1px solid;*/
+
+}
+
+.player1 #marca1{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	font-weight: bold;
+	float: left;
+	/*border-right: 1px solid;*/
+
+}
+.player1 #nome1{
+	display: inline-block;
+	height: 15px;
+	width: 12px;
+	font-weight: bold;
+	float: center;
+	/*border-right: 1px solid;*/
+
+}
+.player1 #p1_wins{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	font-weight: bold;
+	float: right;
+	/*border-right: 1px solid;*/
+
+}
+
+.player2 label{
 	height: 5px;
-	width: 100px;
-	border-right: 1px solid;
+	width: 10px;
+	margin-left: 5px;
+	display: flex;
+	/*border-right: 1px solid;*/
+
+}
+
+.player2 #marca2{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	font-weight: bold;
+	float: left;
+
+}
+
+.player2 #nome2{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	font-weight: bold;
+	float: center;
+
+}
+
+.player2 #p2_wins{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	font-weight: bold;
+	float: right;
 
 }
